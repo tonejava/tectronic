@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tectrony Tecnologia — Fabricante de Equipamentos Eletrônicos</title>
+  <meta name="description" content="Tectrony Tecnologia - Fabricante de equipamentos eletrônicos: termostatos, voltímetros, painéis de senha, letreiros digitais. Entrega para todo Brasil.">
+  <meta name="keywords" content="termostatos digitais, painéis de senha, letreiros digitais, voltímetros, amperímetros, controladores PWM, Tectrony, Lages SC">
+  <meta property="og:title" content="Tectrony Tecnologia — Fabricante de Equipamentos Eletrônicos">
+  <meta property="og:description" content="Tecnologia de ponta ao seu alcance. Termostatos, voltímetros, painéis de senha e letreiros digitais.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://tectrony.com.br/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-top">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="Tectrony Tecnologia" class="logo-img">
+      </a>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar produtos, categorias..." autocomplete="off">
+        <button class="search-btn" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+      </div>
+      <div class="header-actions">
+        <button class="header-action" aria-label="Favoritos">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span>Favoritos</span>
+        </button>
+        <button class="header-action" id="cartBtn" aria-label="Carrinho">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span>Carrinho</span>
+          <span class="badge" id="cartBadge">0</span>
+          <div class="mini-cart" id="miniCart">
+            <div class="mini-cart-title">Meu Carrinho</div>
+            <div class="mini-cart-items" id="miniCartItems"></div>
+            <div class="mini-cart-subtotal">
+              <span>Subtotal</span>
+              <span id="miniCartTotal">R$ 0,00</span>
+            </div>
+            <div class="mini-cart-btns">
+              <a href="#" class="btn btn-outline">Ver Carrinho</a>
+              <a href="#" class="btn btn-primary">Finalizar</a>
+            </div>
+          </div>
+        </button>
+        <button class="header-action" aria-label="Login">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>Login</span>
+        </button>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <div class="header-nav-inner">
+        <a href="categoria-medidores-temperatura.html" class="nav-link">Acessórios</a>
+        <a href="categoria-medidores-diversos.html" class="nav-link">Instrumentação Elétrica</a>
+        <a href="categoria-instrumentacao-eletrica.html" class="nav-link">Termostatos</a>
+        <a href="categoria-paineis-letreiros.html" class="nav-link">Letreiros</a>
+        <a href="categoria-acessorios.html" class="nav-link">Painéis de Senha</a>
+        <a href="categoria-medidores-tempo.html" class="nav-link">Medidores Diversos</a>
+        <a href="categoria-instrumentacao-eletrica.html" class="nav-link">Desenvolvimento</a>
+        <a href="tel:+554930213235" class="nav-phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (49) 3021-3235
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SLIDER -->
+  <section class="hero-slider" id="heroSlider">
+    <div class="slider-track" id="sliderTrack">
+      <!-- Slide 1: Instrumentação Elétrica -->
+      <div class="slide active" data-index="0">
+        <div class="slide-bg" style="background: linear-gradient(135deg, #0A2463 0%, #1e3a8a 50%, #0d2e7a 100%);"></div>
+        <div class="slide-content">
+          <span class="slide-tag">Instrumentação Elétrica</span>
+          <h2 class="slide-title">Precisão em Cada Medição</h2>
+          <p class="slide-desc">Voltímetros, amperímetros e frequencímetros digitais de alta precisão. Desenvolvidos e fabricados no Brasil para aplicações industriais e automotivas.</p>
+          <a href="#produtos" class="btn btn-primary btn-lg">Ver Produtos</a>
+        </div>
+        <div class="slide-visual">
+          <img src="images/1a.png" alt="Voltímetro V12in" class="slide-product-img">
+        </div>
+      </div>
+      <!-- Slide 2: Painéis de Senha -->
+      <div class="slide" data-index="1">
+        <div class="slide-bg" style="background: linear-gradient(135deg, #0d2e7a 0%, #0A2463 50%, #1e3a8a 100%);"></div>
+        <div class="slide-content">
+          <span class="slide-tag">Painéis de Senha</span>
+          <h2 class="slide-title">Organize Seu Atendimento</h2>
+          <p class="slide-desc">Painéis de senha com dígitos grandes, controle de volume e instalação em segundos. Ideal para lanchonetes, food trucks, clínicas e escritórios.</p>
+          <a href="#produtos" class="btn btn-primary btn-lg">Conhecer</a>
+        </div>
+        <div class="slide-visual">
+          <img src="images/2a.png" alt="Painel de Senha" class="slide-product-img">
+        </div>
+      </div>
+      <!-- Slide 3: Letreiros Digitais -->
+      <div class="slide" data-index="2">
+        <div class="slide-bg" style="background: linear-gradient(135deg, #FF6B00 0%, #e65f00 50%, #ff8533 100%);"></div>
+        <div class="slide-content">
+          <span class="slide-tag">Letreiros Digitais</span>
+          <h2 class="slide-title">Comunicação Visual Inteligente</h2>
+          <p class="slide-desc">Temporizador para chuveiro economize no banho se paga em 3 meses browser. Visualização de até 40 metros.</p>
+          <a href="#produtos" class="btn btn-primary btn-lg btn-light">Ver Letreiros</a>
+        </div>
+        <div class="slide-visual">
+          <img src="images/3a.png" alt="Letreiro Digital WiFi" class="slide-product-img">
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots" id="sliderDots">
+      <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+      <button class="dot" data-index="1" aria-label="Slide 2"></button>
+      <button class="dot" data-index="2" aria-label="Slide 3"></button>
+    </div>
+    <button class="slider-arrow slider-prev" id="sliderPrev" aria-label="Slide anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="slider-arrow slider-next" id="sliderNext" aria-label="Próximo slide">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </section>
+
+  <!-- CATEGORIAS EM DESTAQUE -->
+  <section class="categories-section">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">Navegue por Categoria</span>
+        <h2 class="section-title">Categorias em Destaque</h2>
+        <p class="section-subtitle">Soluções eletrônicas para diversos segmentos</p>
+      </div>
+      <div class="categories-grid">
+        <a href="#" class="category-card">
+          <div class="category-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>Instrumentação Elétrica</h3>
+          <p>Voltímetros, amperímetros e frequencímetros</p>
+          <span class="category-count">12 produtos</span>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-icon" style="background: #fef3c7;">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>
+          </div>
+          <h3>Termostatos</h3>
+          <p>Controle de temperatura para estufas, aquários, geladeiras</p>
+          <span class="category-count">8 produtos</span>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-icon" style="background: #dbeafe;">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <h3>Painéis de Senha</h3>
+          <p>Organização de filas e atendimento</p>
+          <span class="category-count">15 produtos</span>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-icon" style="background: #fce7f3;">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Letreiros Digitais</h3>
+          <p>Comunicação visual para estacionamentos e eventos</p>
+          <span class="category-count">6 produtos</span>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-icon" style="background: #d1fae5;">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Medidores de Tempo</h3>
+          <p>Relógios, temporizadores e cronômetros</p>
+          <span class="category-count">9 produtos</span>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-icon" style="background: #e0e7ff;">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 2a10 10 0 0 1 10 10"/><path d="M12 12l9-3"/></svg>
+          </div>
+          <h3>Controladores PWM</h3>
+          <p>Geradores de hidrogênio e controladores diversos</p>
+          <span class="category-count">5 produtos</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS EM DESTAQUE -->
+  <section class="featured-section" id="produtos">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="section-tag">Mais Vendidos</span>
+          <h2 class="section-title">Produtos em Destaque</h2>
+        </div>
+        <a href="#" class="section-link">
+          Ver todos
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+      <div class="products-grid" id="featuredGrid"></div>
+    </div>
+  </section>
+
+  <!-- POR QUE COMPRAR -->
+  <section class="why-section">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">Diferenciais</span>
+        <h2 class="section-title">Por que comprar na Tectrony?</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Fabricação Própria</h3>
+          <p>Todos os produtos são desenvolvidos e fabricados em nossa fábrica em Lages/SC, com controle total de qualidade.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3>Suporte Técnico</h3>
+          <p>Assistência técnica total de fábrica. Dúvidas? Fale direto pelo WhatsApp com nossa equipe especializada.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Qualidade Garantida</h3>
+          <p>Garantia de 6 a 12 meses em todos os produtos. Nota fiscal e certificação de fábrica inclusos.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Envio para Todo Brasil</h3>
+          <p>Postamos em até 24h úteis. Frete econômico para Sul e Sudeste. Rastreamento completo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-text">
+          <h3>Receba Novidades e Ofertas</h3>
+          <p>Cadastre-se para receber lançamentos, promoções exclusivas e cupons de desconto.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Seu e-mail" required>
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Tectrony">
+          <span>Tec<span>Trony</span></span>
+        </div>
+        <p class="footer-desc">Fabricante de equipamentos eletrônicos diversos. Tecnologia de ponta ao seu alcance. Desde 2008 desenvolvendo soluções em instrumentação, controle e automação.</p>
+        <div class="payment-icons">
+          <span class="payment-badge">PagSeguro</span>
+          <span class="payment-badge">Mercado Pago</span>
+          <span class="payment-badge">PIX</span>
+          <span class="payment-badge">SSL Seguro</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Links Rápidos</h4>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#">Frete e Devoluções</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categorias</h4>
+        <ul class="footer-links">
+          <li><a href="#">Termostatos</a></li>
+          <li><a href="#">Voltímetros</a></li>
+          <li><a href="#">Painéis de Senha</a></li>
+          <li><a href="#">Letreiros Digitais</a></li>
+          <li><a href="#">Controladores PWM</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Contato</h4>
+        <p>
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Av. Edésio Caon, 645 – Jardim Panorâmico<br>Lages – SC – CEP: 88.524-010
+        </p>
+        <p>
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+554930213235">(49) 3021-3235</a> / <a href="tel:+5549991553225">(49) 9915-53225</a>
+        </p>
+        <p>
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:contato@tectrony.com.br">contato@tectrony.com.br</a>
+        </p>
+        <p>
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <a href="https://api.whatsapp.com/send?phone=5549999722713" target="_blank" rel="noopener">WhatsApp (49) 9997-22713</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2024 Tectrony Tecnologia – CNPJ: 08.988.352/0001-09 – Todos os direitos reservados
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://api.whatsapp.com/send?phone=5549999722713" class="float-whatsapp" target="_blank" rel="noopener" aria-label="Fale Conosco pelo WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Fale Conosco
+  </a>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toastMsg">Produto adicionado ao carrinho!</span>
+  </div>
+
+  <script src="script/app.js"></script>
+</body>
+</html>
